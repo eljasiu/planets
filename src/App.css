@@ -1,4 +1,5 @@
 .App{
-    background: url("img/background.svg") #070722;
+    background: url("img/background.svg") #11113f;
     height: 100vh;
+    padding: 0 1.2rem;
 }

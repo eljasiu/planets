@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap');
+
+.headingContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading{
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    color: #f0ffff;
+}
+
+.toggleMenu{
+    padding: 16px 0;
+}
+
+.hamburger{
+    cursor: pointer;
+    width: 35px;
+    height: 4px;
+    background-color: #f0ffff;
+    border-radius: 3px;
+    transition: all 500ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: #f0ffff;
+    border-radius: 3px;
+    transition: all 500ms ease-in-out;
+}
+
+.hamburger::before{
+    transform: translateY(-11px);
+}
+
+.hamburger::after{
+    transform: translateY(11px);
+}
+
+.hamburger.open{
+    transform: translateX(-35px);
+    background-color: transparent;
+}
+
+.hamburger.open::before{
+    transform: rotate(45deg) translate(25px, -25px);
+}
+
+.hamburger.open::after{
+    transform: rotate(-45deg) translate(25px, 25px);
+}
