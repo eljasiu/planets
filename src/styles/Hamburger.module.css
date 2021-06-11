@@ -53,10 +53,10 @@
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
     .hamburger.open::before{
-        transform: rotate(45deg) translate(0, -50px);
+        transform: rotate(45deg) translate(0, -25px);
     }
     
     .hamburger.open::after{
-        transform: rotate(-45deg) translate(50px, 0);
+        transform: rotate(-45deg) translate(50px, 25px);
     }
 }}
