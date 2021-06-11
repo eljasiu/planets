@@ -22,22 +22,42 @@
 }
 
 .hamburger::before{
+    -webkit-transform: translateY(-11px);
+    -ms-transform: translateY(-11px);
+    -moz-transform: translateY(-11px);
+    -o-transform: translateY(-11px);
     transform: translateY(-11px);
 }
 
 .hamburger::after{
+    -webkit-transform: translateY(11px);
+    -ms-transform: translateY(11px);
+    -moz-transform: translateY(11px);
+    -o-transform: translateY(11px);
     transform: translateY(11px);
 }
 
 .hamburger.open{
+    -webkit-transform: translateX(-35px);
+    -ms-transform: translateX(-35px);
+    -moz-transform: translateX(-35px);
+    -o-transform: translateX(-35px);
     transform: translateX(-35px);
     background-color: transparent;
 }
 
 .hamburger.open::before{
+    -webkit-transform: rotate(45deg) translate(25px, -25px);
+    -ms-transform: rotate(45deg) translate(25px, -25px);
+    -moz-transform: rotate(45deg) translate(25px, -25px);
+    -o-transform: rotate(45deg) translate(25px, -25px);
     transform: rotate(45deg) translate(25px, -25px);
 }
 
 .hamburger.open::after{
+    -webkit-transform: rotate(-45deg) translate(25px, 25px);
+    -ms-transform: rotate(-45deg) translate(25px, 25px);
+    -moz-transform: rotate(-45deg) translate(25px, 25px);
+    -o-transform: rotate(-45deg) translate(25px, 25px);
     transform: rotate(-45deg) translate(25px, 25px);
 }
