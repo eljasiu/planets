@@ -57,6 +57,6 @@
     }
     
     .hamburger.open::after{
-        transform: rotate(-45deg) translate(25px, 0);
+        transform: rotate(-45deg) translate(25px, 50px);
     }
 }}
