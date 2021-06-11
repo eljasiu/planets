@@ -52,7 +52,11 @@
 
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    .hamburgerContainer { 
-        transform: scale(0.8) translateY(-25px);
+    .hamburger.open::before{
+        transform: rotate(45deg) translate(25px, 0);
+    }
+    
+    .hamburger.open::after{
+        transform: rotate(-45deg) translate(25px, 0);
     }
 }}
