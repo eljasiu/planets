@@ -2,12 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 
 .headingContainer{
-    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    display: flex;
     justify-content: space-between;
-    -webkit-box-orient: horizontal;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background-color: #0b0b23;
@@ -21,4 +17,3 @@
     font-weight: 500;
     color: #f0ffff;
 }
-
