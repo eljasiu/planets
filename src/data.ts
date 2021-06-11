@@ -219,4 +219,4 @@ const data: Planet[] = [
     }
 ];
 
-export default Planet;
+export default data;
