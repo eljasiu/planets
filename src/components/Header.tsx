@@ -18,7 +18,7 @@ function Header({ data }: HeaderProps){
                 <h1 className={styles.heading}>The Planets</h1>
                 <Hamburger open={showMenu} toggler={setShowMenu}/>
             </div>
-            <Navigation open={showMenu} data={data}/>
+            <Navigation open={showMenu} data={data} toggler={setShowMenu}/>
         </header>
     )
 }
