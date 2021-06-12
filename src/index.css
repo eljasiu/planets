@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+html{
+  --background: #0b0b23;
+  --mercury: #419db9;
+  --venus: #eda44a;
+  --earth: #6f2ed6;
+  --mars: #d14e33;
+  --jupiter: #d93b36;
+  --saturn: #cb5020;
+  --uranus: #1ec2a4;
+  --neptune: #2d68f0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: #0b0b23;
+    background-color: var(--background);
     padding: 1rem 1.1rem;
 }
 
@@ -16,6 +16,19 @@
     font-size: 2rem;
     font-weight: 500;
     color: #f0ffff;
+}
+
+@media (min-width: 550px) {
+    .headingContainer{
+        flex-direction: column;
+        border-bottom: none;
+        padding-top: 1.7rem;
+        background-color: transparent;
+    }
+
+    .headingContainer > *:last-child{
+        display: none;
+    }
 }
 
 @media not all and (min-resolution:.001dpcm)
