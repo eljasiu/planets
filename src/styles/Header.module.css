@@ -18,3 +18,11 @@
     color: #f0ffff;
 }
 
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .headingContainer > *:last-child{
+        position: absolute;
+        top: 1.4rem;
+        right: 1.1rem;
+    }
+}}
