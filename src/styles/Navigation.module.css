@@ -32,38 +32,6 @@
     transform: translateY(-15%);
 }
 
-.mercury::before{
-    background-color: var(--mercury);
-}
-
-.venus::before{
-    background-color: var(--venus);
-}
-
-.earth::before{
-    background-color: var(--earth);
-}
-
-.mars::before{
-    background-color: var(--mars);
-}
-
-.jupiter::before{
-    background-color: var(--jupiter);
-}
-
-.saturn::before{
-    background-color: var(--saturn);
-}
-
-.uranus::before{
-    background-color: var(--uranus);
-}
-
-.neptune::before{
-    background-color: var(--neptune);
-}
-
 .navItemText{
     margin-left: 2.5rem;
     font-family: 'Spartan', sans-serif;
@@ -86,16 +54,71 @@
     }
 
     .navItem{
-        padding: 0;
         padding: 2rem 0 1.8rem;
+        position: relative;
     }
 
     .navItem::before{
         display: none;
     }
 
+    .navItem::after{
+        content: '';
+        height: 3px;
+        position: absolute;
+        left: -15%;
+        right: -15%;
+        bottom: -1px;
+        transform: scaleX(0);
+        transition: transform 400ms ease;
+    }
+
+    .navItem:hover::after{
+        transform: scaleX(1);
+    }
+
     .navItemText{
         margin-left: 0;
         font-size: 0.7rem;
     }
+}
+
+.mercury::before,
+.mercury::after{
+    background-color: var(--mercury);
+}
+
+.venus::before,
+.venus::after{
+    background-color: var(--venus);
+}
+
+.earth::before,
+.earth::after{
+    background-color: var(--earth);
+}
+
+.mars::before,
+.mars::after{
+    background-color: var(--mars);
+}
+
+.jupiter::before,
+.jupiter::after{
+    background-color: var(--jupiter);
+}
+
+.saturn::before,
+.saturn::after{
+    background-color: var(--saturn);
+}
+
+.uranus::before,
+.uranus::after{
+    background-color: var(--uranus);
+}
+
+.neptune::before,
+.neptune::after{
+    background-color: var(--neptune);
 }
