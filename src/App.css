@@ -1,4 +1,4 @@
 .App{
     background: url("img/background.svg") var(--background);
-    height: 100vh;
+    min-height: 100vh;
 }

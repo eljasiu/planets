@@ -60,6 +60,10 @@
     .venus.active{ background-color: var(--venus); }
     .mars.active{ background-color: var(--mars); }
     .earth.active{ background-color: var(--earth); }
+    .jupiter.active{ background-color: var(--jupiter); }
+    .saturn.active{ background-color: var(--saturn); }
+    .uranus.active{ background-color: var(--uranus); }
+    .neptune.active{ background-color: var(--neptune); }
 }
 
 .mercury::before,

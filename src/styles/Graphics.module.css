@@ -1,0 +1,16 @@
+.graphics{
+    margin: 4rem auto;
+    position: relative;
+    width: 55%;
+}
+
+.planetImg{
+    width: 100%;
+}
+
+.planetSurfaceImg{
+    width: 65%;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+}
