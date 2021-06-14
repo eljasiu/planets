@@ -4,7 +4,7 @@ import Planet from '../interfaces/planet';
 
 const requestImageFile = require.context('../img', true);
 
-interface GraphicsProps{
+interface GraphicsProps {
     tab: number
 }
 

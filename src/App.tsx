@@ -5,6 +5,7 @@ import { Route, Redirect } from 'react-router-dom';
 import { useState } from 'react';
 import Tabs from './components/Tabs';
 import Graphics from './components/Graphics';
+import Info from './components/Info';
 
 function App() {
   const [tab, setTab] = useState(0);
@@ -19,6 +20,7 @@ function App() {
         <div className="grid">
           <Tabs tab={tab} setTab={setTab}/>
           <Graphics tab={tab} />
+          <Info tab={tab}/>
         </div>
     </div>
   );
