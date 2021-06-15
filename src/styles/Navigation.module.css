@@ -4,6 +4,7 @@
     position: fixed;
     z-index: 1;
     width: 100%;
+    height: 100vh;
     transform: translateX(100%);
     transition: transform 300ms ease-out;
     background-color: var(--background);
@@ -45,6 +46,7 @@
 @media (min-width: 550px) {
     .navigation{
         transform: translateX(0);
+        height: auto;
         padding: 0 1.5rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         background-color: transparent;
