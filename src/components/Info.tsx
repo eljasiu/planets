@@ -18,7 +18,7 @@ function Info({ tab }: InfoProps){
                 {tab===2 && planet.surfaceGeology}
             </p>
             <span className={styles.source}>
-                Source: <a href={planet.source}>Wikipedia</a>
+                Source: <a target="_blank" rel="noreferrer" href={planet.source}>Wikipedia</a>
             </span>
         </div>
     )

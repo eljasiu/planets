@@ -37,15 +37,19 @@
 @media (min-width: 550px) {
     .tabs{
         flex-direction: column;
+        justify-content: center;
+        gap: 0.6rem;
         border-bottom: none;
-        gap: 1rem;
-        margin: 0 16rem;
+        grid-area: 2 / 2 / 3 / 3;
+        width: 83%;
+        margin-left: auto;
     }
 
     .tabOption{
         font-weight: 700;
         border: 1px solid rgba(255, 255, 255, 0.2);
         transition: all 400ms ease;
+        font-size: 0.7rem;
     }
 
     .tabOption span{
@@ -64,6 +68,14 @@
     .saturn.active{ background-color: var(--saturn); }
     .uranus.active{ background-color: var(--uranus); }
     .neptune.active{ background-color: var(--neptune); }
+}
+
+@media (min-width: 1100px){
+    .tabs{
+        grid-area: 2 / 3 / 3 / 4;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
 }
 
 .mercury::before,

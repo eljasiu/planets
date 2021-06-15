@@ -2,3 +2,21 @@
     background: url("img/background.svg") var(--background);
     min-height: 100vh;
 }
+
+@media (min-width: 550px) {
+    .grid{
+        display: grid;
+        grid-template: 50% 50% / 50% 50%;
+        align-items: baseline;
+        margin: 0 2rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .grid{
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        align-items: start;
+        margin: 3.5rem 10rem 0;
+    }
+}
