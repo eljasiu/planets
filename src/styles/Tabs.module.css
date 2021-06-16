@@ -1,0 +1,119 @@
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tabOption{
+    color: #f0ffffab;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabOption::after{
+    content: '';
+    height: 3px;
+    position: absolute;
+    left: -15%;
+    right: -15%;
+    bottom: -1px;
+    transform: scaleX(0);
+    transition: all 400ms ease;
+}
+
+.tabOption.active{
+    color: #f0ffff;
+}
+
+.tabOption.active::after{
+    transform: scaleX(1);
+}
+
+@media (min-width: 550px) {
+    .tabs{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.6rem;
+        border-bottom: none;
+        grid-area: 2 / 2 / 3 / 3;
+        width: 83%;
+        margin-left: auto;
+    }
+
+    .tabOption{
+        font-weight: 700;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 400ms ease;
+        font-size: 0.7rem;
+        padding: 0.8rem;
+    }
+
+    .tabOption span{
+        margin: 0 1rem;
+    }
+
+    .tabOption::after{
+        display: none;
+    }
+
+    .mercury.active{ background-color: var(--mercury); }
+    .venus.active{ background-color: var(--venus); }
+    .mars.active{ background-color: var(--mars); }
+    .earth.active{ background-color: var(--earth); }
+    .jupiter.active{ background-color: var(--jupiter); }
+    .saturn.active{ background-color: var(--saturn); }
+    .uranus.active{ background-color: var(--uranus); }
+    .neptune.active{ background-color: var(--neptune); }
+}
+
+@media (min-width: 1100px){
+    .tabs{
+        grid-area: 3 / 3 / 4 / 4;
+        width: 100%;
+    }
+}
+
+.mercury::before,
+.mercury::after{
+    background-color: var(--mercury);
+}
+
+.venus::before,
+.venus::after{
+    background-color: var(--venus);
+}
+
+.earth::before,
+.earth::after{
+    background-color: var(--earth);
+}
+
+.mars::before,
+.mars::after{
+    background-color: var(--mars);
+}
+
+.jupiter::before,
+.jupiter::after{
+    background-color: var(--jupiter);
+}
+
+.saturn::before,
+.saturn::after{
+    background-color: var(--saturn);
+}
+
+.uranus::before,
+.uranus::after{
+    background-color: var(--uranus);
+}
+
+.neptune::before,
+.neptune::after{
+    background-color: var(--neptune);
+}

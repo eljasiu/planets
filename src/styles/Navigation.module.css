@@ -1,0 +1,149 @@
+@import url('../index.css');
+
+.navigation{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 300ms ease-out;
+    background-color: var(--background);
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #f0ffff;;
+}
+
+.navigation.open{
+    transform: translateX(0);
+}
+
+.navItem{
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.navItem::before{
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-15%);
+}
+
+.navItemText{
+    margin-left: 2.5rem;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (min-width: 550px) {
+    .navigation{
+        transform: translateX(0);
+        height: auto;
+        padding: 0 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+        position: static;
+    }
+
+    .navList{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navItem{
+        padding: 2rem 0 1.8rem;
+        position: relative;
+        border-bottom: none;
+    }
+
+    .navItem::before{
+        display: none;
+    }
+
+    .navItem::after{
+        content: '';
+        height: 3px;
+        position: absolute;
+        left: -15%;
+        right: -15%;
+        bottom: -1px;
+        transform: scaleX(0);
+        transition: transform 400ms ease;
+    }
+
+    .navItem:hover::after,
+    .navItem.active::after{
+        transform: scaleX(1);
+    }
+
+    .navItemText{
+        margin-left: 0;
+        font-size: 0.7rem;
+        color: #f0ffffab;
+        transition: all 200ms ease;
+    }
+
+    .navItem:hover .navItemText{
+        color: #f0ffff;
+    }
+}
+
+@media (min-width: 1100px) {
+    .navigation{
+        border-bottom: none;
+        width: 50%;
+        padding: 0 3rem;
+    }
+
+    .navItem::after{
+        top: 0;
+    }
+}
+
+.mercury::before,
+.mercury::after{
+    background-color: var(--mercury);
+}
+
+.venus::before,
+.venus::after{
+    background-color: var(--venus);
+}
+
+.earth::before,
+.earth::after{
+    background-color: var(--earth);
+}
+
+.mars::before,
+.mars::after{
+    background-color: var(--mars);
+}
+
+.jupiter::before,
+.jupiter::after{
+    background-color: var(--jupiter);
+}
+
+.saturn::before,
+.saturn::after{
+    background-color: var(--saturn);
+}
+
+.uranus::before,
+.uranus::after{
+    background-color: var(--uranus);
+}
+
+.neptune::before,
+.neptune::after{
+    background-color: var(--neptune);
+}

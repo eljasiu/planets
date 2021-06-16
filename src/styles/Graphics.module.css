@@ -1,0 +1,30 @@
+.graphics{
+    margin: 4rem auto;
+    position: relative;
+    width: 55%;
+}
+
+.planetImg{
+    width: 100%;
+}
+
+.planetSurfaceImg{
+    width: 52%;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+}
+
+@media (min-width: 550px) {
+    .graphics{
+        grid-area: 1 / 1 / 2 / 3;
+        width: 35%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .graphics{
+        grid-area: 1 / 1 / 4 / 3;
+        width: 50%;
+    }
+}
