@@ -50,6 +50,7 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
         transition: all 400ms ease;
         font-size: 0.7rem;
+        padding: 0.8rem;
     }
 
     .tabOption span{
@@ -72,9 +73,8 @@
 
 @media (min-width: 1100px){
     .tabs{
-        grid-area: 2 / 3 / 3 / 4;
+        grid-area: 3 / 3 / 4 / 4;
         width: 100%;
-        margin-top: 1.5rem;
     }
 }
 
